@@ -7,27 +7,27 @@ To train the model, we have used a cluster with gpu type a100/80G and 12 CPUs.
 
 ## Files
 1. data/Gettingdata.ipynb
-    - This file is used to read the csv file containing urls and classification and generating the prompt and html output from the url.
+    - This file will convert each URL into a prompt and its corresponding html code. It saves the data in json format.
       
 2. src/code_llama.ipynb
-    - This file has the code used for training of fine-tuned code_llama model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
+    - This file has the code used for fine-tuning code_llama model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
 
 3. src/falcon_training.ipynb
-    - This file has the code used for training of fine-tuned falcon model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
+    - This file has the code used for fine-tuning falcon model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
 
 4. src/llama_training.ipynb
-    - This file has the code used for training of fine-tuned llama2 model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
+    - This file has the code used for fine-tuning llama2 model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
 
 5. src/gpt2_training.ipynb
-    - This file has the code used for training of fine-tuned gpt2 model with custom dataset.
+    - This file has the code used for fine-tuning gpt2 model with custom dataset.
 
 ## Execution
 1. Install the requirements stated in the requirements.txt or type the command in the terminal 
 ```pip install -r requirements.txt```
-2. Execute each cell in the jupyter note book based on the comments provided in the notebook to either train or to evaluate the model.
+2. Execute each cell in the jupyter notebook based on the comments provided in the notebook to either train or to evaluate the model.
 
 
 ## Model
-We have saved the model that is fine tuned and trained on code-llama model in models folder.
+The fine-tuned code-llama model is saved in the models folder.
 
 For more details, please refer project report.
