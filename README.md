@@ -5,6 +5,9 @@ The Website Generation NLP project aims to simplify webpage creation using Natur
 ## Environment
 To train the model, we have used a cluster with gpu type a100/80G and 12 CPUs.
 
+## Data
+[Click here](https://northeastern-my.sharepoint.com/:f:/g/personal/javvaji_m_northeastern_edu/Etay6w32PONHu5kgTFRTD50BkevTdoF-ELZ6NGe5Ifmh9Q?e=MgugHk) to access the data
+
 ## Files
 1. data/Gettingdata.ipynb
     - This file will convert each URL into a prompt and its corresponding html code. It saves the data in json format.
