@@ -1,34 +1,33 @@
-WEBCRAFT
+# WEBCRAFT - WHERE WORDS CREATE WEBPAGES
+
+The Website Generation NLP project aims to simplify webpage creation using Natural Language Processing (NLP) and Web Development technologies. By leveraging NLP algorithms to interpret user input and organize content, the project facilitates the generation of aesthetically pleasing web layouts without requiring complex coding skills. This approach bridges the gap between technical and non-technical users, offering an intuitive interface for online content creation.
+
+## Environment
+To train the model, we have used a cluster with gpu type a100/80G and 12 CPUs.
+
+## Files
+1. data/Gettingdata.ipynb
+    - This file is used to read the csv file containing urls and classification and generating the prompt and html output from the url.
+      
+2. src/code_llama.ipynb
+    - This file has the code used for training of fine-tuned code_llama model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
+
+3. src/falcon_training.ipynb
+    - This file has the code used for training of fine-tuned falcon model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
+
+4. src/llama_training.ipynb
+    - This file has the code used for training of fine-tuned llama2 model with custom dataset as well as the evaluation steps for evaluating the model giving the user input.
+
+5. src/gpt2_training.ipynb
+    - This file has the code used for training of fine-tuned gpt2 model with custom dataset.
+
+## Execution
+1. Install the requirements stated in the requirements.txt or type the command in the terminal 
+```pip install -r requirements.txt```
+2. Execute each cell in the jupyter note book based on the comments provided in the notebook to either train or to evaluate the model.
 
 
-This repository contains code for training a pre trained Code-Llama model to generate HTML code from natural language prompts. The model is fine-tuned on a custom dataset containing pairs of prompts and corresponding HTML outputs.
+## Model
+We have saved the model that is fine tuned and trained on code-llama model in models folder.
 
-Installation
-To install the required dependencies, run:
-
-pip install -r requirements.txt
-
-
-This will install the necessary Python packages, including PyTorch, Transformers, tqdm, NumPy, pandas, accelerate, peft, trl and bitsandbytes.
-
-Usage:
-
-Training: To train the model, run the train.py script with the appropriate arguments. Make sure to specify the path to your dataset and any other relevant parameters.
-
-Inference: Once the model is trained, you can generate HTML code from prompts using the generate.py script. Provide a prompt as input, and the model will output the corresponding HTML code.
-
-Evaluation: Use the evaluate.py script to evaluate the model's performance on a test dataset. This script computes metrics such as accuracy, F1 score, and area under the ROC curve.
-
-Directory Structure
-
-data/: Contains the dataset used for training and evaluation.
-models/: Saved model checkpoints.
-src/: Source code for training, inference, and evaluation.
-requirements.txt: List of required Python packages.
-
-
-Contributing
-
-Contributions to this project are welcome. Feel free to submit bug reports, feature requests, or pull requests through GitHub.
-
-License
+For more details, please refer project report.
